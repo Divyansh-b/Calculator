@@ -15,6 +15,13 @@ public class Calculator {
 
     System.out.print("Enter your choice (1-4): ");
     int choice = scanner.nextInt();
+    switch (choice) {
+      case 1:
+        System.out.println("Result: " + (num1 + num2));
+        break;
+      default:
+        System.out.println("Invalid choice! Please select a valid operation.");
+    }
 
     scanner.close();
   }
